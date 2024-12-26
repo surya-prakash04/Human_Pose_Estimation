@@ -27,7 +27,7 @@ inHeight = 368
 @st.cache_resource
 def load_model():
     """Load the pose estimation model."""
-    static_model_path = "C:\\Users\\SATYA PRAKASH\\OneDrive\\Desktop\\Project\\graph_opt (1).pb"  # Replace with your static model path
+    static_model_path = "graph_opt (1).pb"  # Replace with your static model path
     return cv2.dnn.readNetFromTensorflow(static_model_path)
 
 def poseDetector(frame, thresh):
@@ -61,7 +61,7 @@ def load_image(image_file):
     if image_file is not None:
         return np.array(Image.open(image_file))
     else:
-        demo_image_path = "C:\\Users\\SATYA PRAKASH\\OneDrive\\Desktop\\Project\\enterprise_2.jpg"  # Replace with your demo image path
+        demo_image_path = "enterprise_2.jpg"  # Replace with your demo image path
         return np.array(Image.open(demo_image_path))
 
 # Streamlit UI with background
