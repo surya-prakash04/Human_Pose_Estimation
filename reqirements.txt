@@ -2,6 +2,7 @@ streamlit
 numpy
 Pillow
 opencv-python
+opencv-python-headless
 transformers
 torch
 torchvision
